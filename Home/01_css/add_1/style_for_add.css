@@ -1,0 +1,20 @@
+a{
+    color: blue;
+}
+.menu li a {
+    font-style: italic;
+}
+.underlined span {
+    text-decoration: underline;
+}
+.bold span {
+    font-weight:bold;
+}
+.italics span{
+    font-style: italic;
+}
+.code code {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight:bold;
+}
