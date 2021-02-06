@@ -1,0 +1,16 @@
+ul{
+    width: 350px;
+}
+.big_list{
+    list-style-type: upper-roman;
+}
+.list{
+    list-style-type:lower-roman;
+}
+div{
+    background-color: black;
+    color: green;
+    width: 400px;
+    max-height:100%;
+    overflow: auto;
+}

@@ -1,0 +1,31 @@
+.parent{
+    background-color: #d2cbcb;
+}
+.block_1{
+    width: 15em;
+    background-color:darkgrey;
+    float: left;
+}
+.block_2{
+    background-color:darkgrey;
+    margin-bottom:2em;
+    width:auto;
+}
+.block_3{
+    background-color:darkgrey;
+    margin-bottom:2em;
+    margin-left: 240px;
+    width:auto;
+}
+.block_4{
+    background-color:darkgrey;
+    width:auto;
+    height: auto;
+    clear: both;
+}
+span{
+    font-weight: bold;
+}
+img{
+    margin-left:80% ;
+}
