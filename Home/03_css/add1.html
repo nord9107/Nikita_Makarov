@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu {
+            list-style: none;
+        }
+        .menu .menu-item {
+            float: left;
+            margin: 0 1px 0 0;
+            padding: 0;
+            background: #E1E1E1;
+            border-style: solid;
+            border-radius: 5px;
+            width: 150px;
+        }
+        .menu .menu-item a {
+            padding: 5px 10px;
+        }
+        .menu .submenu {
+            opacity: 0;
+            transition: 1s;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: #E1E1E1;
+        }
+        .menu .menu-item:hover .submenu {
+            opacity: 1;
+            transition: 1s;
+        }
+        .menu .submenu-item {
+            margin: 0;
+            padding: 5px 10px;
+            border-style: solid;
+            border-radius: 5px;
+        }
+        @media all and (max-width: 1120px) {
+            .menu .menu-item {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li class="menu-item"> Понедельник
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Вторник
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Среда
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Четверг
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Пятница
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Суббота
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+    <li class="menu-item"> Воскресенье
+        <ul class="submenu">
+            <li class="submenu-item">Завтрак</li>
+            <li class="submenu-item">Обед</li>
+            <li class="submenu-item">Ужин</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
