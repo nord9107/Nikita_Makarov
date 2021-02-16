@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Python - part 2</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12" >
+            <div class="item">
+            <h1>HOW-TO: Программа на Python, Часть 2</h1>
+            </div>
+        </div>
+        <div class="item col-xl-4 col-lg-6">
+            <div class="item">
+                <ul>
+                <li><a href="1.html"><i>Программа на Python — часть 1 </i></a></li>
+                <li><a href="2.html"><i>Программа на Python — часть 2 </i></a></li>
+                <li><a href="3.html"><i>Программа на Python — часть 3 </i></a></li>
+            </ul>
+            <h2>Содержание</h2>
+            <h3>HOW-TO: Программа на Python, Часть 2</h3>
+            <ul>
+                <li><a href="#the_lists">Списки</a></li>
+                <li><a href="#comments">Коментарии</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-6">
+            <div class="item">
+            <hr>
+            <p>Впрошлом уроке мы рассмотрели простую программу, которая использовала raw_input
+                для получения ответа пользователя, простые типы переменных и простой цикл «<b>for</b>». В
+                этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше
+                программ.</p>
+            <h2 id="the_lists">Списки</h2>
+            <a href="2.html#content">К содержанию</a>
+            <p>Давайте рассмотрим другой тип переменных, который называется <i>списки</i>. В других
+                языках программирования они называются <i>массивами</i>. Если мы обратимся к аналогии с
+                коробками для обуви, то массив (список) представляет собой несколько склеенных друг с
+                другом коробок с одинаковыми вещами. Например, в одной коробке лежат вилки, в
+                другой — ножи, в третьей — ложки. Посмотрим на простой список— список месяцев. Мы
+                запрограммируем его так:</p>
+            <p><code>months = <br>
+                ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']</code></p>
+            <p>Чтобы создать список, мы заключили все значения в квадратные скобки ( <b>'['</b> и <b>']'</b> ). Мы
+                назвали наш список <i>'months'</i>. Чтобы использовать список, мы дадим команду print
+                <b>months[0]</b> или <b>months[1]</b> (которые выведут на экран <i>'Jan'</i> или <i>'Feb'</i>). Помните: счет
+                начинается с нуля. Чтобы найти длину списка, можно использовать такую функцию:</p>
+            <p><code>print len(months)</code></p>
+            <p>которая вернёт 12.</p>
+            <p>Ещё один пример списков — категории в поваренной книге. Например...</p>
+            <p><code>categories = ['Main dish','Meat','Fish','Soup','Cookies']</code> </p>
+            <p>Таким образом, в <b>categories[0]</b> хранится <i>'Main dish'</i>, а в <b>categories[4]</b> — <i>'Cookies'</i>. Всё
+                очень просто. Я уверен, вы сможете придумать много других примеров использования
+                списков.</p>
+            <hr>
+            <h2 id="comments">Комментарии</h2>
+            <a href="2.html#content">К содержанию</a>
+            <p>Далее, мы должны обсудить комментарии. Комментарии важны по нескольким причинам.
+                Они не только говорят вам или другим людям, что вы пытаетесь делать, но и напомнят
+                вам через полгода, что же вы хотели сделать. Когда вы будете писать много программ,
+                комментарии станут важными. Также при их помощи вы заставите Python игнорировать
+                какие-либо части кода. Чтобы закомментировать строку, поставьте перед ней знак '#'.<br>
+                Например:</p>
+            <p><code>#</code></p>
+            <p>Это комментарий</p>
+            <p>Комментарии можно вставлять в любое место в строке, но помните, что Python
+                проигнорирует всё, что идёт после '#'.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

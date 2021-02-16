@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Python - part 3</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12" >
+            <div class="item">
+            <h1>HOW-TO: Программа на Python, Часть 3</h1>
+            </div>
+        </div>
+        <div class="item col-xl-4 col-lg-6">
+            <div class="item">
+            <ul>
+                <li><a href="1.html"><i>Программа на Python — часть 1 </i></a></li>
+                <li><a href="2.html"><i>Программа на Python — часть 2 </i></a></li>
+                <li><a href="3.html"><i>Программа на Python — часть 3 </i></a></li>
+            </ul>
+            <h2>Содержание</h2>
+            <h3>HOW-TO: Программа на Python, Часть 3</h3>
+            <ul>
+                <li><a href="#modules">Модули</a></li>
+                <li><a href="#function">Функции</a> </li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-6">
+            <div class="item">
+            <hr>
+            <p>В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и
+                присвоение, операторы <b>if</b> и <b>while</b>. Я обещал, что в этой части мы изучим модули и
+                функции. Давайте начнём.</p>
+            <h2 id="modules">Модули</h2>
+            <a href="1.html#content">К содержанию</a>
+            <p>Модули предлагают способ расширить программирование на Python. Вы можете создать
+                свои модули, использовать те, которые поставляются с Python или которые написали
+                другие. В самом Python есть сотни модулей, которые облегчают написание программ.
+                Список модулей, поставляемых с Python, находится по адресу:<i> <a href="https://www.it-academy.by/">http://docs.python.org/modindex.html</a></i>. Некоторые модули предназначены для определённых
+                операционных систем, но большинство из них кроссплатформенные и работают одинаково на <a
+                        href="https://ru.wikipedia.org/wiki/Linux" target="_blank"> Linux </a>, <a
+                        href="https://ru.wikipedia.org/wiki/Macintosh" target="_blank">Mac</a> и <a
+                        href="https://ru.wikipedia.org/wiki/Windows" target="_blank">Microsoft Windows</a>.
+                Для использования внешнего модуля необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
+                называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
+                используем этот модуль в нашем первом примере.</p>
+            <p><code>
+                #=======================================<br>
+                # random_example.py<br>
+                # Module example using the random module<br>
+                #=======================================<br>
+                import random<br>
+                # print 14 random integers<br>
+                for cntr in range(1,15):<br>
+                print random.randint(1,10)</code></p>
+            <p>Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых
+                мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать
+                модуль «random». Мы должны явно указать Python на это.</p>
+            <hr>
+            <h2 id="function">Функции </h2>
+            <a href="1.html#content">К содержанию</a>
+            <p>Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция
+                — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
+                более одного раза. Это упрощает работу над программой и предотвращает набор одного и
+                того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код
+                больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень
+                простые, это хорошие примеры функций. Теперь мы хотим, скажем, взять два числа,
+                сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и
+                результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов
+                чисел. Тогда наш пример будет выглядеть как код ниже.</p>
+            <p> <code>
+                #silly example<br>
+                print '%d + %d = %d ' % (1,2,1+2)<br>
+                print '%d * %d = %d ' % (1,2,1*2)<br>
+                print '%d - %d = %d ' % (1,2,1-2)<br>
+                <br>
+                print '\n'<br>
+                print '%d + %d = %d ' % (1,4,1+4)<br>
+                print '%d * %d = %d ' % (1,4,1*4)<br>
+                print '%d - %d = %d ' % (1,4,1-4)<br>
+                <br>
+                print '\n'<br>
+                print '%d + %d = %d ' % (10,5,10+5)<br>
+                print '%d * %d = %d ' % (10,5,10*5)<br>
+                print '%d - %d = %d ' % (10,5,10-5)<br>
+                print '\n'</code></p>
+            <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
+                написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
+                назовём <i><b>«DoTwo»</b></i>. Она будет каждый раз брать два числа, проводить математические
+                операции и выводить результат. Начнём с ключевого слова <i><b>«def»</b></i>, которое сигнализирует
+                о том, что мы собираемся определить функцию. После слова <i><b>«def»</b></i> добавим название
+                функции и список параметров, если таковые имеются, в круглых скобках. Эту строку
+                необходимо завершить двоеточием. Код функции набирается с отступом. Наш
+                улучшенный простой пример (<u>&#8470;2</u>) показан ниже.</p>
+            <pre> <code>
+            #silly example 2...still silly, but better
+            def DoTwo(num1,num2):
+                    print '%d + %d = %d ' % (num1,num2,num1+num2)
+                    print '%d * %d = %d ' % (num1,num2,num1*num2)
+                    print '%d - %d = %d ' % (num1,num2,num1-num2)
+                    print '\n'
+            DoTwo(1,2)
+            DoTwo(1,4)
+            DoTwo(10,5)</code></pre>
+            <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-
+                либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
+                программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

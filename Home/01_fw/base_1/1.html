@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Python - part 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-xl-12 col-lg-12" >
+                    <div class="item">
+                        <h1>HOW-TO: Программа на Python, Часть 1</h1>
+                    </div>
+                </div>
+                <div class="item col-xl-4 col-lg-6">
+                    <div class="item">
+                        <ul>
+                        <li><a href="1.html"><i>Программа на Python — часть 1 </i></a></li>
+                        <li><a href="2.html"><i>Программа на Python — часть 2 </i></a></li>
+                        <li><a href="3.html"><i>Программа на Python — часть 3 </i></a></li>
+                        </ul>
+
+                        <h2 id="content">Содержание </h2>
+                        <h3>HOW-TO: Программа на Python, Часть 1</h3>
+                        <ul>
+                            <li> <a href="#our_first_program">Наша первая программа </a></li>
+                            <li> <a href="#for_loop_example"> Пример цикла For </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-6">
+                    <div class="item">
+                        <p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+                            Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+                            состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+                            для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+                            программирование графических интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо
+                            сейчас.</p>
+                        <h2 id="our_first_program"> Наша первая программа</h2>
+                        <a href="#content">К содержанию</a>
+                        <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает каждая
+                            строка и пойдём дальше.<br>
+                            <br>
+                            Введите эти 4 строки:</p>
+                        <p><code>
+                            #!/usr/bin/env python<br>
+                            print 'Hello. I am a python program.'<br>
+                            name = raw_input("What is your name?")<br>
+                            print "Hello there, " + name + "!"</code></p>
+                        <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+                            <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать программу на
+                            Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале</p>
+                        <p><code><em><strong><u>chmod +x hello.py</u></strong></em></code></p>
+                        <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+                        <p><code>
+                            greg@earth:~/python_examples$ ./hello.py<br>
+                            Hello. I am a python program.<br>
+                            What is your name? Ferd Burphel<br>
+                            Hello there, Ferd Burphel!<br>
+                            greg@earth:~/python_examples$</code></p>
+                        <p>Вот и всё.</p>
+                        <h2 id="for_loop_example">Пример цикла For</h2>
+                        <a href="#content">К содержанию</a>
+                        <p>Теперь давайте рассмотрим пример программирования цикла.
+                            Запустите текстовый редактор и наберите следующую программу:</p>
+                        <pre><code>
+                        #!/usr/bin/env python
+                        for cntr in range(0,10):
+                            print cntr</code></pre>
+                        <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно.
+                            В Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
